@@ -1,5 +1,5 @@
 //lvl 1
-var person='jasser';
+var person='MedSouleim';
 function greet(person){
     console.log('good day'+' '+ person);
 }
