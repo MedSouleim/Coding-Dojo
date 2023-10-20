@@ -1,6 +1,6 @@
 /*
  * White Belt - Option D
- * Your Name: MedSouleim BENSAID
+ * Your Name: 
  */
 
 // Question 1
