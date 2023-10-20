@@ -103,7 +103,20 @@ function sumEvenNumb(){
     var sum=1;
     for(var i=1;i<=1000;i++){
         if(i%2==0){
-            sum+=1;
+            sum=sum+i;
         }
     }return sum;
 }
+// Largest Value :
+// Create a function that will return the largest value present in the array.
+function largestValue(){
+	var array = [9, 3, -3, -9, 11, -6, 5, 10, -9, 1];
+	var largest = array[0];
+	for(var i=0;i<=array.length-1;i++){
+	    if(array[i]>largest){
+	        largest=array[i]
+	    }
+	}
+	return largest;
+}
+
