@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+    background-color: white;
+}
+
+.flag {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.cross > .top_left{
+    background-color: aqua;
+    width:100px;
+    height: 50%;
+}
+.blue-stripe {
+    background-color: blue;
+    flex: 1;
+}
+
+.white-stripe {
+    background-color:white;
+    flex: 1;
+}
+
+.white-cross {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vertical-bar {
+    background-color: white;
+    width: 15px;
+    height: 10px;
+}
+
+.horizontal-bar {
+    background-color:white;
+    width: 10px;
+    height: 15px;
+}
