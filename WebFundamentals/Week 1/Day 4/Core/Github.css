@@ -1,0 +1,31 @@
+.block1{
+    display: flex;
+    justify-content: space-around;
+    background-color:aqua;
+    margin-bottom: 20px;
+}
+img{
+    width:150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.block2{
+    display: flex;
+    justify-content: space-around;
+    background-color:grey;
+    margin-bottom: 20px;
+}
+.block3{
+    display: flex;
+    justify-content: space-around;
+    background-color:white ;
+}
+h1{
+    text-align: center;
+    color: grey;
+    font-family: sans-serif;
+}
+body{
+    background-color: rgb(130, 179, 195);
+    width: 700px;
+}
