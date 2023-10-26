@@ -1,0 +1,44 @@
+body{
+    color: white;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAL5YX10k4OU7TMjwQ6LI9rG3z42BOXQ_-Ydk9pZqGYlWuH6HdZr9mn63S_fLH0cicevzML-RfmOnZJPR1la9R7rmYaPoHTvukyQGzLLawcSRDipGJKnT4-5Febq0bTcvPxeOHLLLTW96Ed0N0eLHdzmbja8E99jZxqc-JVLwzjR3r-seubG2PXZFmWw/w640-h336/jujutsu-kaisen-skin-mobile-legends.jpg);    
+}
+.nav{
+    display: flex;
+    background-color: rgb(106, 105, 105);
+    justify-content:space-between;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: black 10px 10px;
+}
+.nav-links{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    align-items: center;
+    margin-right: 10px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: solid;
+    color: white;
+    font-style: italic;
+}
+.btn {
+    height: 40%;
+    width: 120%;
+    color: white;
+    background-color: rgb(119, 255, 0);
+    box-shadow: black 3px 3px;
+    border-radius: 10px;
+}
+.nav-title{
+    margin-left: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+.active{
+    font-weight: bold;
+}
