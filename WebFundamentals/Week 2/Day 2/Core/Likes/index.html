@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>likes</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Network</h1>
+    <h2>Your Feed</h2>
+    <div class="main">
+        <div class="left">
+            <img id="user" src="./user-circle.png" alt="userimg">
+            <a href="#">Add an avatar</a>
+            <h3>James Doe</h3>
+        </div>
+        <div class="right">
+            <div class="container1">
+                <div class="ligne">
+                    <h4 id="h4Id">Neil M</h4>
+                    <span class="likeId"><p id="likeId1">9</p>like(s)</span>
+                    <button onclick="upvote(1)" id="like">Like</button>
+                </div>
+                <p id="pId">I just set up this new discord bot, le me know what you
+                     all think. <a href="#">link</a></p>
+            </div>
+            <div class="container2">
+                <div class="ligne">
+                    <h4 id="h4Id">Nichole k</h4>
+                    <span class="likeId"><p id="likeId2">12</p>like(s)</span>
+                    <button id="like" onclick="upvote(2)">Like</button>
+                </div>
+                <p id="pId">Just finished my <a href="#">next comic</a>,check it out.</p>
+            </div>
+            <div class="container3">
+                <div class="ligne">
+                    <h4 id="h4Id">Jim R</h4>
+                    <span class="likeId"><p id="likeId3">9</p>like(s)</span>
+                    <button onclick="upvote(3)" id="like">Like</button>
+                </div>
+                <p id="pId">I can't stop listening to the <a href="#">new album</a>;
+                Who else liking it?</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
