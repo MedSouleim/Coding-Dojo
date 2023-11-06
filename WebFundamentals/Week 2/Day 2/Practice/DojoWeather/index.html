@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- navBar -->
+    <div class="nav">
+        <div class="left">
+            <h1>DojoWeather</h1>
+        </div>
+        <div class="right">
+            <a href="#">
+                <h3 onclick="myclick(1)">Burbank</h3>
+            </a>
+            <a href="#">
+                <h3 onclick="myclick(2)">Chicago</h3>
+            </a>
+            <a href="#">
+                <h3 onclick="myclick(3)">Dallas</h3>
+            </a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="header">
+            <h1 id="head-title">San Jose</h1>
+            <div class="head-right">
+                <span>show temperature in</span>
+                <select name="temperature"  id="unite" onchange="uniteChange()">
+                    <option value="celsius">C°</option>
+                    <option value="fahrenheit">F°</option>
+                </select>
+            </div>
+        </div>
+        <hr id="ligne">
+        <div class="middle">
+            <div class="day">
+                <h4>Today</h4>
+                <img src="./assets/some_rain.png" alt="rainy">
+                <span>some rain</span>
+                <div class="°">
+                    <span id="degree1">24°</span>
+                    <span id="degree2">18°</span>
+                </div>
+            </div>
+            <div class="day">
+                <h4>Tomorrow</h4>
+                <img src="./assets/some_sun.png" alt="sunny">
+                <span>some sun</span>
+                <div class="temp">
+                    <span id="degree1">27°</span>
+                    <span id="degree2">19°</span>
+                </div>
+            </div>
+            <div class="day">
+                <h4>Fridar</h4>
+                <img src="./assets/some_clouds.png" alt="cloudy">
+                <span>some clouds</span>
+                <div class="temp">
+                    <span id="degree1">21°</span>
+                    <span id="degree2">16°</span>
+                </div>
+            </div>
+            <div class="day">
+                <h4>Saturday</h4>
+                <img src="./assets/some_sun.png" alt="sunny">
+                <span>some sun</span>
+                <div class="temp myflex">
+                    <span id="degree1">26°</span>
+                    <span id="degree2">21°</span>
+                </div>
+            </div>
+        </div>
+        <div class="pop-up" id="PopThat">
+            <div class="middle-pop">
+                <img src="./assets/cookie.png" alt="cookie">
+                <div class="paragraphe">
+                    <h2>Stop! Cookie time</h2>
+                    <p>We use cookies (sadly not the edible ones) to personalise</p>
+                    <p>content and ads, to provide social media features and to analyse</p>
+                    <p>our traffic. <a href="#">Read more...</a></p>
+                </div>
+            </div>
+            <div class="right-pop">
+                <button id="accept" onclick="removeDiv()">I Accept</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
