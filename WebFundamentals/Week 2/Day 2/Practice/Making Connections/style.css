@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:"Comic Sans MS", "Comic Sans", cursive ;
 }
 
 /* styles to apply to body */
@@ -173,7 +174,16 @@ a {
     margin-right: 0;
 }
 
-.badge {
+#badge {
+    font-size: 1rem;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 10px;
+    background-color: #999;
+    border-radius: 12px;
+    margin-right: 10px;
+}
+.badge1 {
     font-size: 1rem;
     height: 24px;
     line-height: 24px;
