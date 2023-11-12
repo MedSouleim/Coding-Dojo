@@ -22,7 +22,7 @@ body {
     align-items: center;
     background-color: #f7f9fb;
     transform: translate((50%, 50%));
-    transition: opacity 5s, visibility 5s;
+    transition: opacity 3s, visibility 3s;
 
 }
 
