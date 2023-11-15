@@ -33,19 +33,24 @@ def iterateDictionary1(students):
         print(f"first_name: {s["first_name"]} , last_name: {s["last_name"]}")
 iterateDictionary1(students)
 # 3
-def iterateDictionary(some_list):
-    for student in some_list:
-        for key, value in student.items():
-            print(f"{value}")
-
-iterateDictionary(students)
-
 def iterateDictionary2(key_name, some_list):
     for student in some_list:
-        print(student[key_name])
+        print(student.get(key_name))
 
+iterateDictionary2('first_name', students)
 iterateDictionary2('last_name', students)
+# 5
+dojo = {
+   'locations': ['San Jose', 'Seattle', 'Dallas', 'Chicago', 'Tulsa', 'DC', 'Burbank'],
+   'instructors': ['Michael', 'Amy', 'Eduardo', 'Josh', 'Graham', 'Patrick', 'Minh', 'Devon']
+}
+def printInfo(dojo):
+    for key, value in dojo.items():
+        print(f"{len(value)} {key.upper()}")
+        for item in value:
+            print(item)
 
+printInfo(dojo)
 
 
 
