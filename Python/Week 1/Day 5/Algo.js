@@ -31,8 +31,19 @@ const expected4 = false;
  * @returns {boolean} Whether the given str is a palindrome or not.
  */
 function isPalindrome(str) {
-    var newStr = "" ; 
-    for (var i = str1.length ; i < 0 ; i--){
-        newStr += str[i];
-    }console.log(newStr);
+	for (var i = 0; i < Math.floor(str.length / 2); i++) {
+		if (str[i] !== str[str.length - 1 - i]) {
+			return false;
+		}
+	}
+	return true;
 }
+// using built-in methods
+function isPalindromeShort(str) {
+	return str === str.split("").reverse().join("");
+}
+
+console.log(isPalindromeShort(str1));
+console.log(isPalindromeShort(str2));
+console.log(isPalindromeShort(str3));
+console.log(isPalindromeShort(str4));
