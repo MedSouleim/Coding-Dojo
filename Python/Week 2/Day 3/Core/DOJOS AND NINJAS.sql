@@ -24,4 +24,10 @@ select * from dojos;
 
 -- SELECT * FROM dojos_and_ninjas.ninjas;          
 
- -- SELECT * FROM dojos_and_ninjas.ninjas where Dojo_id = 9                                                       
+ -- SELECT * FROM dojos_and_ninjas.ninjas where Dojo_id = 9    
+ 
+ 
+usersusersrecipies
+ 
+ 
+ 

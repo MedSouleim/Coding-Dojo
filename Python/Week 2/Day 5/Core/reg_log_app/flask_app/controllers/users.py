@@ -10,13 +10,12 @@ bcrypt = Bcrypt(app)
 def home():
     return render_template('index.html')
 
-@app.route('/dashboard')
+@app.route('/recipies')
 def dashboard():
-    return render_template("dashboard.html")
+    return render_template("recipies.html")
 
 @app.route('/register', methods=['POST'])
 def register():
-    print ( "🚀"*10,request.form, "🚀"*10)
     # if User.validate()
     data = {**request.form}
     # data={
@@ -41,4 +40,4 @@ def login():
         # if we get False after checking the password
         flash("Invalid Password")
         return redirect('/')
-    return redirect('/dashboard')
+    return redirect('/recipies')
