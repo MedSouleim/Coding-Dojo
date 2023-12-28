@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const PORT = 8000;
+const PORT = 8003;
 const faker  = require('faker');
 
 
@@ -52,6 +52,25 @@ console.log(fakeCompany);
 
 
 
-app.listen( PORT, () => {
-    console.log(`Listening on PORT: ${PORT}`) }
-    );
+
+app.get('/api/users/new', (req, res) => {
+    const newUser = createUser();
+    res.json({ user: newUser });
+});
+
+
+app.get('/api/companies/new', (req, res) => {
+    const newCompany = createFakeCompany();
+    res.json({ company: newCompany });
+});
+
+app.get('/api/user/company', (req, res) => {
+    const newUser = createUser();
+    const newCompany = createFakeCompany();
+    res.json({ user: newUser, company: newCompany });
+});
+
+
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+});
