@@ -1,0 +1,31 @@
+.pirate{
+    background-color: #f5cf9e;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10PX;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10PX 20PX;
+    box-shadow: 0px 2px 2px 0px gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.button_delete{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(165, 10, 28);
+    color: aliceblue;
+    border: none;
+    /* box-shadow: 0px 2px 2px 0px gray; */
+    border-radius: 5px;
+    margin-right: 5px;
+
+}
+
+.pirate-img{
+    height:30px;
+    width: 30px;
+}
