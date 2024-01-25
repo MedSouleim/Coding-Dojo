@@ -23,6 +23,5 @@ public class AlfredTest {
         System.out.println(alfredTest);
         System.out.println(notRelevantTest);
 
-
     }
 }
