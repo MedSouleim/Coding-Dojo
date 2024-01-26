@@ -1,9 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Random;
 
-public class PuzzleJava {
+public class TestPuzzleJava {
 
     // Method to generate and return an array with 10 random numbers between 1 and 20 inclusive.
     public ArrayList<Integer> getTenRolls() {
@@ -64,7 +63,7 @@ public class PuzzleJava {
     }
 
     public static void main(String[] args) {
-        PuzzleJava generator = new PuzzleJava();
+        TestPuzzleJava generator = new TestPuzzleJava();
 
         // Test getTenRolls
         ArrayList<Integer> randomRolls = generator.getTenRolls();
