@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class GreetingController {
 
-    @GetMapping("/greeting")
+    @GetMapping("/")
     public String greeting(@RequestParam(name = "name", defaultValue = "human") String name,
                            @RequestParam(name = "last_name", required = false) String lastName,
                            @RequestParam(name = "times", defaultValue = "1") int times) {
