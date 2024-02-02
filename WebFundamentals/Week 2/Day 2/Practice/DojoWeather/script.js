@@ -4,7 +4,7 @@ function removeDiv() {
 }
 
 
-function myclick (element) {
+function myclick(element) {
     if (element == "1") {
         alert("Loading weather report... for Burbank city");
     } else {
@@ -21,12 +21,12 @@ function myclick (element) {
 function uniteChange() {
     uniteToChoose = document.querySelector("#unite").value;
     for (var i = 0; i < isCel.length; i++) {
-      var btnName = "#b" + (i + 1);
-      var theBtn = document.querySelector(btnName);
-      if (uniteToChoose == "°C") {
-        theBtn.innerText = isCel[i];
-      } else {
-        theBtn.innerText = isFar[i];
-      }
+        var btnName = "#b" + (i + 1);
+        var theBtn = document.querySelector(btnName);
+        if (uniteToChoose == "°C") {
+            theBtn.innerText = isCel[i];
+        } else {
+            theBtn.innerText = isFar[i];
+        }
     }
-  }
+}
