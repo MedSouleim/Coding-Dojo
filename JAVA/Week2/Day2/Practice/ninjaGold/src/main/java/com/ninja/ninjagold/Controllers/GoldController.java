@@ -32,22 +32,16 @@ public class GoldController {
         int goldEarned = 0;
         Random random = new Random();
 
-        switch (location) {
-            case "farm":
-                goldEarned = random.nextInt(11) + 10;
-                break;
-            case "cave":
-                goldEarned = random.nextInt(6) + 5;
-                break;
-            case "house":
-                goldEarned = random.nextInt(4) + 2;
-                break;
-            case "quest":
-                goldEarned = random.nextInt(101) - 50;
-                break;
-            case "spa":
-                goldEarned = random.nextInt(16) - 5;
-                break;
+        if (location.equals("farm")) {
+            goldEarned = random.nextInt(11) + 10;
+        } else if (location.equals("cave")) {
+            goldEarned = random.nextInt(6) + 5;
+        } else if (location.equals("house")) {
+            goldEarned = random.nextInt(4) + 2;
+        } else if (location.equals("quest")) {
+            goldEarned = random.nextInt(101) - 50;
+        } else if (location.equals("spa")) {
+            goldEarned = random.nextInt(16) - 5;
         }
 
         int currentGold = (int) session.getAttribute("gold");
